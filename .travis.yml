@@ -1,9 +1,9 @@
 language: python
 python:
     - "2.7"
-
-# command to install dependencies, e.g. pip install -r requirements.txt --usemirrors
-# install: CHANGE ME
-# command to run tests, e.g. python setup.py test
-# script test.py
-
+install: "pip install -r requirements.txt"
+script: 
+    - python tests/test.py 
+branches:
+    only:
+        - master
